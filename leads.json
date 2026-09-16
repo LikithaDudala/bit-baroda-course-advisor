@@ -1,0 +1,7 @@
+{
+  "leads": [
+    {"name": "Rahul Sharma", "number": "+91XXXXXXXXXX", "interest": "Data Science"},
+    {"name": "Priya Patel", "number": "+91XXXXXXXXXX", "interest": "Digital Marketing"},
+    {"name": "Amit Kumar", "number": "+91XXXXXXXXXX", "interest": "Full Stack Development"}
+  ]
+}

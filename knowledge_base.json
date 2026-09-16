@@ -1,0 +1,376 @@
+{
+  "institute": "BIT - Baroda Institute of Technology",
+  "about": "BIT Baroda is an IT and professional certification training institute in Vadodara, Gujarat, established in 2002. Over 23 years of experience, IBM and IIT Patna certified programs, ISO 9001:2015 certified, with 25,000+ students placed in top MNCs. Offers online and in-person courses with internships and placement support.",
+  "contact": {
+    "phone": "+91 9328994901",
+    "email": "info@bitbaroda.com",
+    "address": "Sayajigunj, Vadodara, Gujarat",
+    "hours": "Monday to Saturday 9:00 am to 6:00 pm, Sunday closed"
+  },
+  "courses": [
+    {
+      "id": "DS001",
+      "name": "Data Science & AI Certification",
+      "category": "Data Science & AI",
+      "description": "A comprehensive program covering data science and artificial intelligence, certified by IBM and IIT Patna. Covers statistics, Python, machine learning, deep learning, and real-world projects.",
+      "duration": "8 months",
+      "fee": "Approximately 75,000 rupees, EMI options available",
+      "eligibility": "Graduates or final year students from any stream, basic computer knowledge helpful",
+      "mode": "Online and in-person (classroom)",
+      "certification": "IBM and IIT Patna certified",
+      "key_topics": "Python, statistics, machine learning, deep learning, data visualization, SQL, capstone projects",
+      "career_outcomes": "Data Scientist, ML Engineer, Data Analyst roles in MNCs",
+      "batch_timings": "Weekday and weekend batches available"
+    },
+    {
+      "id": "DS002",
+      "name": "Data Analytics with Gen AI",
+      "category": "Data Science & AI",
+      "description": "Data analytics program enhanced with generative AI tools, focused on practical analytics skills for business decision-making.",
+      "duration": "6 months",
+      "fee": "Approximately 55,000 rupees, EMI options available",
+      "eligibility": "Graduates or students from any background",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "Excel, SQL, Python, Power BI, Tableau, generative AI tools for analytics",
+      "career_outcomes": "Data Analyst, Business Analyst roles",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "DS003",
+      "name": "Python Programming",
+      "category": "Data Science & AI",
+      "description": "Foundational to advanced Python programming course suitable for beginners and those entering data science or development.",
+      "duration": "3 months",
+      "fee": "Approximately 25,000 rupees",
+      "eligibility": "Open to all, no prior programming experience needed",
+      "mode": "Online and in-person",
+      "certification": "Course completion certificate",
+      "key_topics": "Python basics, data structures, functions, OOP, file handling, libraries",
+      "career_outcomes": "Foundation for data science, web development, automation roles",
+      "batch_timings": "Flexible weekday and weekend options"
+    },
+    {
+      "id": "DS004",
+      "name": "Machine Learning",
+      "category": "Data Science & AI",
+      "description": "Focused machine learning course covering algorithms, model building, and deployment.",
+      "duration": "4 months",
+      "fee": "Approximately 45,000 rupees",
+      "eligibility": "Basic Python and statistics knowledge recommended",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "Supervised and unsupervised learning, model evaluation, scikit-learn, real projects",
+      "career_outcomes": "Machine Learning Engineer, Data Scientist",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "DS005",
+      "name": "Power BI & Data Analytics",
+      "category": "Data Science & AI",
+      "description": "Business intelligence and data visualization course using Microsoft Power BI.",
+      "duration": "2 months",
+      "fee": "Approximately 20,000 rupees",
+      "eligibility": "Open to all, basic Excel knowledge helpful",
+      "mode": "Online and in-person",
+      "certification": "Course completion certificate",
+      "key_topics": "Power BI, dashboards, DAX, data modeling, reporting",
+      "career_outcomes": "BI Analyst, Data Analyst",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "WD001",
+      "name": "Full Stack Web Development",
+      "category": "Web Development & Programming",
+      "description": "End-to-end web development program covering front-end and back-end technologies with live projects.",
+      "duration": "7 months",
+      "fee": "Approximately 70,000 rupees, EMI options available",
+      "eligibility": "Graduates or students, basic computer knowledge",
+      "mode": "Online and in-person",
+      "certification": "Industry certification with placement support",
+      "key_topics": "HTML, CSS, JavaScript, React, Node.js, databases, deployment, projects",
+      "career_outcomes": "Full Stack Developer, Front-end Developer, Back-end Developer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "WD002",
+      "name": "MERN Stack Development",
+      "category": "Web Development & Programming",
+      "description": "Specialized full stack course focused on MongoDB, Express, React, and Node.js.",
+      "duration": "6 months",
+      "fee": "Approximately 60,000 rupees, EMI options available",
+      "eligibility": "Basic programming knowledge helpful",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "MongoDB, Express.js, React, Node.js, REST APIs, full projects",
+      "career_outcomes": "MERN Stack Developer, Full Stack Developer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "WD003",
+      "name": "Java Programming",
+      "category": "Web Development & Programming",
+      "description": "Core and advanced Java programming course with certification.",
+      "duration": "4 months",
+      "fee": "Approximately 35,000 rupees",
+      "eligibility": "Open to all, logical aptitude helpful",
+      "mode": "Online and in-person",
+      "certification": "Java certification",
+      "key_topics": "Core Java, OOP, collections, exception handling, JDBC, basics of frameworks",
+      "career_outcomes": "Java Developer, Backend Developer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "AI001",
+      "name": "AI Agent Developer Certification",
+      "category": "AI & Emerging Technologies",
+      "description": "Cutting-edge program on building AI agents, certified curriculum covering modern agentic AI development.",
+      "duration": "4 months",
+      "fee": "Approximately 50,000 rupees, EMI options available",
+      "eligibility": "Basic Python knowledge recommended",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "LLMs, prompt engineering, AI agents, tool use, RAG, deployment",
+      "career_outcomes": "AI Engineer, AI Agent Developer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "AI002",
+      "name": "IBM RAG & Agentic AI",
+      "category": "AI & Emerging Technologies",
+      "description": "IBM-certified program focused on retrieval-augmented generation and agentic AI systems.",
+      "duration": "3 months",
+      "fee": "Approximately 45,000 rupees",
+      "eligibility": "Python and basic ML knowledge recommended",
+      "mode": "Online and in-person",
+      "certification": "IBM certified",
+      "key_topics": "RAG, vector databases, LLM integration, agentic workflows, projects",
+      "career_outcomes": "AI Engineer, Gen AI Developer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "CS001",
+      "name": "Ethical Hacking & Cybersecurity",
+      "category": "Cybersecurity & Networking",
+      "description": "Comprehensive ethical hacking and cybersecurity course with hands-on labs.",
+      "duration": "6 months",
+      "fee": "Approximately 60,000 rupees, EMI options available",
+      "eligibility": "Basic networking knowledge helpful",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "Network security, penetration testing, ethical hacking tools, security analysis",
+      "career_outcomes": "Ethical Hacker, Security Analyst, Cybersecurity Specialist",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "CS002",
+      "name": "AWS Certification Program",
+      "category": "Cybersecurity & Networking",
+      "description": "Amazon Web Services cloud computing certification program.",
+      "duration": "3 months",
+      "fee": "Approximately 40,000 rupees",
+      "eligibility": "Basic IT knowledge recommended",
+      "mode": "Online and in-person",
+      "certification": "AWS aligned certification",
+      "key_topics": "Cloud computing, AWS services, deployment, cloud security",
+      "career_outcomes": "Cloud Engineer, AWS Solutions Architect",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "DM001",
+      "name": "Digital Marketing Course",
+      "category": "Digital Marketing & Design",
+      "description": "Complete digital marketing program covering SEO, social media, ads, and analytics.",
+      "duration": "4 months",
+      "fee": "Approximately 40,000 rupees, EMI options available",
+      "eligibility": "Open to all backgrounds",
+      "mode": "Online and in-person",
+      "certification": "IBM digital marketing certificate option available",
+      "key_topics": "SEO, SEM, social media marketing, Google Ads, content marketing, analytics",
+      "career_outcomes": "Digital Marketing Executive, SEO Specialist, Social Media Manager",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "DM002",
+      "name": "UI/UX Designer Course",
+      "category": "Digital Marketing & Design",
+      "description": "User interface and user experience design course with industry tools.",
+      "duration": "4 months",
+      "fee": "Approximately 45,000 rupees",
+      "eligibility": "Open to all, creative aptitude helpful",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "Figma, design principles, wireframing, prototyping, user research",
+      "career_outcomes": "UI/UX Designer, Product Designer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "CAD001",
+      "name": "AutoCAD Professional Certification",
+      "category": "CAD/CAM & Engineering",
+      "description": "Professional AutoCAD course for 2D and 3D design across engineering disciplines.",
+      "duration": "3 months",
+      "fee": "Approximately 30,000 rupees",
+      "eligibility": "Engineering students or professionals, drawing basics helpful",
+      "mode": "Online and in-person",
+      "certification": "AutoCAD certification",
+      "key_topics": "2D drafting, 3D modeling, design tools, industry drawings",
+      "career_outcomes": "CAD Designer, Draftsman, Design Engineer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "CAD002",
+      "name": "SolidWorks Master Program",
+      "category": "CAD/CAM & Engineering",
+      "description": "Master program in SolidWorks for mechanical design and engineering.",
+      "duration": "4 months",
+      "fee": "Approximately 40,000 rupees",
+      "eligibility": "Mechanical engineering background recommended",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "3D modeling, assembly, simulation, mechanical design",
+      "career_outcomes": "Mechanical Design Engineer, CAD Engineer",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "ACC001",
+      "name": "Tally Prime with GST",
+      "category": "Accounting & Finance",
+      "description": "Accounting course covering Tally Prime software with GST and AI-assisted accounting.",
+      "duration": "2 months",
+      "fee": "Approximately 18,000 rupees",
+      "eligibility": "Commerce background helpful but open to all",
+      "mode": "Online and in-person",
+      "certification": "Course completion certificate",
+      "key_topics": "Tally Prime, GST, accounting entries, taxation, financial reports",
+      "career_outcomes": "Accountant, Account Executive, Tally Operator",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "ACC002",
+      "name": "SAP Master Training",
+      "category": "Accounting & Finance",
+      "description": "Comprehensive SAP ERP training program for enterprise resource planning.",
+      "duration": "5 months",
+      "fee": "Approximately 65,000 rupees, EMI options available",
+      "eligibility": "Graduates, commerce or IT background helpful",
+      "mode": "Online and in-person",
+      "certification": "SAP aligned certification",
+      "key_topics": "SAP modules, ERP concepts, business processes, hands-on practice",
+      "career_outcomes": "SAP Consultant, ERP Specialist",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "ACC003",
+      "name": "Advanced Excel & VBA",
+      "category": "Accounting & Finance",
+      "description": "Advanced Microsoft Excel course including VBA automation.",
+      "duration": "1.5 months",
+      "fee": "Approximately 15,000 rupees",
+      "eligibility": "Basic Excel knowledge",
+      "mode": "Online and in-person",
+      "certification": "Course completion certificate",
+      "key_topics": "Advanced formulas, pivot tables, macros, VBA automation, dashboards",
+      "career_outcomes": "Data Analyst, MIS Executive, Office roles",
+      "batch_timings": "Flexible batches"
+    },
+    {
+      "id": "DEG001",
+      "name": "BCA Program",
+      "category": "Degree & Diploma Programs",
+      "description": "Bachelor of Computer Applications degree program with industry-aligned curriculum.",
+      "duration": "3 years",
+      "fee": "Approximately 60,000 rupees per year",
+      "eligibility": "12th pass from any stream",
+      "mode": "In-person with some online components",
+      "certification": "Recognized degree",
+      "key_topics": "Programming, databases, web development, software engineering, projects",
+      "career_outcomes": "Software Developer, IT roles, further studies (MCA)",
+      "batch_timings": "Regular college timings"
+    },
+    {
+      "id": "LANG001",
+      "name": "Spoken English Professional Certification",
+      "category": "Language Programs",
+      "description": "Spoken English course to build fluency and communication confidence.",
+      "duration": "3 months",
+      "fee": "Approximately 15,000 rupees",
+      "eligibility": "Open to all",
+      "mode": "Online and in-person",
+      "certification": "Course completion certificate",
+      "key_topics": "Grammar, vocabulary, fluency, public speaking, interview skills",
+      "career_outcomes": "Improved communication for any career, interview readiness",
+      "batch_timings": "Flexible weekday and weekend batches"
+    },
+    {
+      "id": "LANG002",
+      "name": "German Language Course",
+      "category": "Language Programs",
+      "description": "German language course from beginner to intermediate levels.",
+      "duration": "4 months per level",
+      "fee": "Approximately 20,000 rupees per level",
+      "eligibility": "Open to all",
+      "mode": "Online and in-person",
+      "certification": "Level completion certificate",
+      "key_topics": "German grammar, vocabulary, conversation, A1 to B1 levels",
+      "career_outcomes": "Foreign language skills for jobs, study abroad, translation",
+      "batch_timings": "Weekday and weekend batches"
+    },
+    {
+      "id": "TEST001",
+      "name": "Software Testing",
+      "category": "Software Testing & ERP",
+      "description": "Software testing course covering manual and automation testing.",
+      "duration": "3 months",
+      "fee": "Approximately 35,000 rupees",
+      "eligibility": "Graduates, basic IT knowledge helpful",
+      "mode": "Online and in-person",
+      "certification": "Industry certification",
+      "key_topics": "Manual testing, automation, Selenium, test cases, bug tracking",
+      "career_outcomes": "QA Engineer, Software Tester, Automation Tester",
+      "batch_timings": "Weekday and weekend batches"
+    }
+  ],
+  "general_faqs": [
+    {
+      "question": "How do I enroll in a course?",
+      "answer": "Enrolling is simple. You can fill the inquiry form on our website, call us on +91 9328994901, or visit our Vadodara campus. Our counsellors will guide you through course selection and the enrollment process."
+    },
+    {
+      "question": "Do you offer online courses?",
+      "answer": "Yes, we offer both online and in-person classroom courses. You can choose the format that suits your schedule and learning style. Recorded lectures are also available for enrolled students to review at their convenience."
+    },
+    {
+      "question": "Do you provide placement assistance?",
+      "answer": "Yes, our programs are job-oriented with placement support. We have placed over 25,000 students in top MNCs like TCS, Infosys, Capgemini, and Wipro. We also offer internships and real-world project training."
+    },
+    {
+      "question": "Are there EMI or installment options for fees?",
+      "answer": "Yes, we offer course fee installment and EMI options for many of our programs to make them affordable. Please speak to our counsellors for the specific plan for your chosen course."
+    },
+    {
+      "question": "Are the certifications recognized?",
+      "answer": "Yes. BIT is ISO 9001:2015 certified, and many programs carry certifications from IBM and IIT Patna. We also offer government-recognized NIELIT courses. These certifications give you an advantage in the job market."
+    },
+    {
+      "question": "Do you offer internships?",
+      "answer": "Yes, we offer internship opportunities, co-op programs, and practical project training in many courses, so you can apply your skills in real-world settings and gain industry experience."
+    },
+    {
+      "question": "What are your timings and location?",
+      "answer": "We are located in Sayajigunj, Vadodara. Our hours are Monday to Saturday, 9 am to 6 pm, and we are closed on Sundays. We have multiple branches across Gujarat."
+    },
+    {
+      "question": "Do I need prior experience to join?",
+      "answer": "It depends on the course. Many foundational courses like Python, Spoken English, and Tally are open to everyone with no prior experience. Advanced courses like Machine Learning may recommend basic background knowledge. Our counsellors can suggest the right starting point for you."
+    },
+    {
+      "question": "Do you have weekend batches?",
+      "answer": "Yes, most of our courses offer both weekday and weekend batches so working professionals and students can choose timings that fit their schedule."
+    },
+    {
+      "question": "Will I get a certificate after completing the course?",
+      "answer": "Yes, you receive a certificate on course completion. Depending on the program, this may be a BIT certificate, an IBM or IIT Patna certification, or a government-recognized NIELIT certificate."
+    }
+  ]
+}

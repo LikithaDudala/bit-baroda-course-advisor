@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIT Baroda Course Advisor — Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1420; color: #e6e9ef; padding: 24px;
+  }
+  .header { margin-bottom: 24px; }
+  .header h1 { font-size: 24px; font-weight: 600; }
+  .header p { color: #8a93a6; font-size: 14px; margin-top: 4px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .card { background: #1a2030; border: 1px solid #2a3142; border-radius: 12px; padding: 20px; }
+  .card .label { color: #8a93a6; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .card .value { font-size: 32px; font-weight: 600; margin-top: 8px; }
+  .card .value.blue { color: #5b9bff; }
+  .card .value.amber { color: #ffb454; }
+  .card .value.green { color: #4ade80; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .panel { background: #1a2030; border: 1px solid #2a3142; border-radius: 12px; padding: 20px; }
+  .panel h2 { font-size: 16px; margin-bottom: 16px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; color: #8a93a6; font-weight: 500; padding: 8px; border-bottom: 1px solid #2a3142; }
+  td { padding: 8px; border-bottom: 1px solid #20273a; vertical-align: top; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; }
+  .badge.followup { background: #3a2a18; color: #ffb454; }
+  .badge.phone { background: #18302a; color: #4ade80; }
+  .badge.test { background: #1e2940; color: #5b9bff; }
+  .refresh { background: #5b9bff; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 13px; }
+  .refresh:hover { background: #4a8aee; }
+  .empty { color: #8a93a6; text-align: center; padding: 24px; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>📞 BIT Baroda Course Advisor</h1>
+    <p>AI Voice Agent — Call Analytics Dashboard</p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="label">Total Calls</div><div class="value blue" id="totalCalls">—</div></div>
+    <div class="card"><div class="label">Follow-ups Needed</div><div class="value amber" id="followUps">—</div></div>
+    <div class="card"><div class="label">Courses Discussed</div><div class="value green" id="coursesCount">—</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Most Asked-About Courses</h2>
+      <canvas id="coursesChart"></canvas>
+      <div id="chartEmpty" class="empty" style="display:none">No data yet — make some calls!</div>
+    </div>
+    <div class="panel">
+      <h2>Quick Actions</h2>
+      <p style="color:#8a93a6; font-size:13px; margin-bottom:12px;">Refresh to see the latest calls.</p>
+      <button class="refresh" onclick="loadData()">🔄 Refresh Data</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Recent Calls</h2>
+    <table>
+      <thead>
+        <tr><th>Time</th><th>Question</th><th>Course</th><th>Answer</th><th>Type</th><th>Follow-up</th></tr>
+      </thead>
+      <tbody id="callsBody">
+        <tr><td colspan="6" class="empty">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+<script>
+let chart = null;
+
+async function loadData() {
+  try {
+    const [statsRes, callsRes] = await Promise.all([
+      fetch('/stats'),
+      fetch('/calls'),
+    ]);
+    const stats = await statsRes.json();
+    const callsData = await callsRes.json();
+    const calls = callsData.calls || [];
+
+    // Cards
+    document.getElementById('totalCalls').textContent = stats.total_calls;
+    document.getElementById('followUps').textContent = stats.follow_ups_needed;
+    document.getElementById('coursesCount').textContent = stats.top_courses.length;
+
+    // Chart
+    const labels = stats.top_courses.map(c => c.course);
+    const counts = stats.top_courses.map(c => c.count);
+    if (labels.length === 0) {
+      document.getElementById('chartEmpty').style.display = 'block';
+    } else {
+      document.getElementById('chartEmpty').style.display = 'none';
+      if (chart) chart.destroy();
+      chart = new Chart(document.getElementById('coursesChart'), {
+        type: 'bar',
+        data: { labels, datasets: [{ data: counts, backgroundColor: '#5b9bff', borderRadius: 6 }] },
+        options: {
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: '#8a93a6', font: {size: 10} }, grid: { display: false } },
+            y: { ticks: { color: '#8a93a6', stepSize: 1 }, grid: { color: '#20273a' } }
+          }
+        }
+      });
+    }
+
+    // Table
+    const body = document.getElementById('callsBody');
+    if (calls.length === 0) {
+      body.innerHTML = '<tr><td colspan="6" class="empty">No calls logged yet.</td></tr>';
+    } else {
+      body.innerHTML = calls.map(c => `
+        <tr>
+          <td>${c.timestamp}</td>
+          <td>${escapeHtml(c.caller_question)}</td>
+          <td>${escapeHtml(c.course_discussed)}</td>
+          <td>${escapeHtml((c.answer_given || '').slice(0, 80))}${(c.answer_given||'').length > 80 ? '…' : ''}</td>
+          <td><span class="badge ${c.call_type}">${c.call_type}</span></td>
+          <td>${c.follow_up_needed ? '<span class="badge followup">Yes</span>' : '—'}</td>
+        </tr>
+      `).join('');
+    }
+  } catch (e) {
+    document.getElementById('callsBody').innerHTML = '<tr><td colspan="6" class="empty">Error loading data: ' + e + '</td></tr>';
+  }
+}
+
+function escapeHtml(s) {
+  return (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+
+loadData();
+setInterval(loadData, 10000); // auto-refresh every 10s
+</script>
+</body>
+</html>

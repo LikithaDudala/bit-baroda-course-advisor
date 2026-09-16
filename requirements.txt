@@ -1,0 +1,7 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+groq==0.11.0
+google-generativeai==0.8.3
+numpy==1.26.4
+requests==2.32.3
+python-dotenv==1.0.1

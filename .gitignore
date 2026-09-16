@@ -1,0 +1,22 @@
+# Environment variables (contains real API keys/secrets — never commit)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Runtime-generated data (recreated automatically on startup / by rag_engine.py)
+calls.db
+embeddings_store.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
