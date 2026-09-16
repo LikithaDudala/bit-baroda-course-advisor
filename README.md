@@ -1,8 +1,22 @@
 # BIT Baroda Course Advisor — AI Voice Agent
 
-An AI-powered voice agent backend that answers prospective students' questions about course
-offerings over live phone calls, runs outbound calling campaigns, and logs every interaction
-to a lightweight CRM with an analytics dashboard.
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
+![Groq](https://img.shields.io/badge/LLM-Groq%20Llama%203.3-F55036?logo=groq&logoColor=white)
+![Gemini](https://img.shields.io/badge/Embeddings-Gemini-4285F4?logo=googlegemini&logoColor=white)
+![Vapi](https://img.shields.io/badge/Voice-Vapi.ai-000000)
+![SQLite](https://img.shields.io/badge/CRM-SQLite-003B57?logo=sqlite&logoColor=white)
+
+> An AI voice agent that answers prospective students' course questions live over the phone —
+> grounded in a retrieval-augmented course catalog, with every call logged to a CRM dashboard.
+
+## Overview
+
+- **23 courses** across **10 categories** — Data Science & AI, Web Development, Cybersecurity,
+  Digital Marketing, Degree & Diploma Programs, and more
+- **RAG pipeline**: Gemini embeddings → cosine-similarity retrieval → Groq Llama 3.3 generation
+- **Live voice integration** via Vapi.ai, plus scripted outbound calling campaigns
+- **Built-in CRM**: every call logged to SQLite, visualized on a live Chart.js dashboard
 
 ## Problem
 
